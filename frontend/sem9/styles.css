@@ -1,0 +1,44 @@
+:root {
+    background-color: black;
+    --primary : #212121;
+    --secondary : rgb(155, 197, 222);
+    --font-color: #ffff;
+    --font-type : 'Arial Bold', sans-serif;
+    --font-title-base: 32px;
+    --font-base : 16px;
+};
+
+.button {
+    border: 4px solid white;
+    color: var(--font-color);
+    background-color: lightblue;
+}
+.button:hover {
+    transition: .25s ease;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.button:active{
+    color: white;
+    background-color: green;
+}
+
+.card {
+    border-radius: 0 0 15px 15px;
+    padding: 12px;
+    background-color: var(--secondary);
+    border: 4px solid white;
+}
+
+.card-title, .card-desc {
+    font-family: var(--font-type);
+    color: var(--font-color)
+}
+
+.card-title {
+    font-size: var(--font-title-base);
+}
+
+.card-desc {
+    font-size: var(--font-base);
+}
