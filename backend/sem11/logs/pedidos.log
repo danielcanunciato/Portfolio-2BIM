@@ -1,0 +1,8 @@
+{"level":"info","message":{"ip":"::1","metodo":"POST","rota":"/pedidos","servico":"Pedidos Service"},"timestamp":"2026-05-27T23:55:06.555Z"}
+{"level":"info","message":{"mensagem":"Pedido criado","pedido":{"id":2,"produto":"Mouse Gamer","quantidade":2,"status":"Pedido recebido","usuarioId":2}},"timestamp":"2026-05-27T23:55:06.560Z"}
+{"level":"info","message":{"ip":"::1","metodo":"GET","rota":"/pedidos/me","servico":"Pedidos Service"},"timestamp":"2026-05-27T23:58:55.055Z"}
+{"level":"warn","message":"Acesso negado: token não enviado","timestamp":"2026-05-27T23:58:55.056Z"}
+{"level":"info","message":{"ip":"::1","metodo":"GET","rota":"/produtos/me","servico":"Pedidos Service"},"timestamp":"2026-05-27T23:59:58.726Z"}
+{"level":"info","message":{"ip":"::1","metodo":"GET","rota":"/pedidos/me","servico":"Pedidos Service"},"timestamp":"2026-05-28T00:00:09.353Z"}
+{"level":"info","message":{"ip":"::1","metodo":"GET","rota":"/pedidos/comunicacao-segura","servico":"Pedidos Service"},"timestamp":"2026-05-28T00:00:51.748Z"}
+{"level":"info","message":{"ip":"::1","metodo":"GET","rota":"/pedidos","servico":"Pedidos Service"},"timestamp":"2026-05-28T00:05:00.158Z"}

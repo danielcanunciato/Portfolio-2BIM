@@ -1,0 +1,14 @@
+{"level":"info","message":{"ip":"::1","metodo":"POST","rota":"/login","servico":"Auth Service"},"timestamp":"2026-05-27T23:51:55.273Z"}
+{"level":"info","message":{"mensagem":"Login realizado com sucesso","role":"cliente","usuario":"cliente@email.com"},"timestamp":"2026-05-27T23:51:55.281Z"}
+{"level":"info","message":{"ip":"::1","metodo":"POST","rota":"/login","servico":"Auth Service"},"timestamp":"2026-05-27T23:55:55.247Z"}
+{"level":"warn","message":{"email":"cliente@gmail.com","mensagem":"Tentativa de login inválida"},"timestamp":"2026-05-27T23:55:55.249Z"}
+{"level":"info","message":{"ip":"::1","metodo":"POST","rota":"/login","servico":"Auth Service"},"timestamp":"2026-05-27T23:56:09.918Z"}
+{"level":"warn","message":{"email":"cliente@gmail.com","mensagem":"Tentativa de login inválida"},"timestamp":"2026-05-27T23:56:09.919Z"}
+{"level":"info","message":{"ip":"::1","metodo":"POST","rota":"/login","servico":"Auth Service"},"timestamp":"2026-05-27T23:56:13.470Z"}
+{"level":"info","message":{"mensagem":"Login realizado com sucesso","role":"cliente","usuario":"cliente@email.com"},"timestamp":"2026-05-27T23:56:13.473Z"}
+{"level":"info","message":{"ip":"::1","metodo":"GET","rota":"/login","servico":"Auth Service"},"timestamp":"2026-05-27T23:59:03.290Z"}
+{"level":"info","message":{"ip":"::1","metodo":"POST","rota":"/login","servico":"Auth Service"},"timestamp":"2026-05-27T23:59:06.707Z"}
+{"level":"info","message":{"mensagem":"Login realizado com sucesso","role":"cliente","usuario":"cliente@email.com"},"timestamp":"2026-05-27T23:59:06.708Z"}
+{"level":"info","message":{"ip":"::1","metodo":"POST","rota":"/logi","servico":"Auth Service"},"timestamp":"2026-05-28T00:03:19.871Z"}
+{"level":"info","message":{"ip":"::1","metodo":"POST","rota":"/login","servico":"Auth Service"},"timestamp":"2026-05-28T00:03:24.102Z"}
+{"level":"info","message":{"mensagem":"Login realizado com sucesso","role":"admin","usuario":"admin@email.com"},"timestamp":"2026-05-28T00:03:24.103Z"}
