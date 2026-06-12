@@ -1,0 +1,43 @@
+body { 
+  margin: 0; 
+  font-family: Arial, sans-serif; 
+  background: #f4f4f4; 
+} 
+ 
+.container { 
+  max-width: 980px; 
+  margin: 0 auto; 
+  padding: 24px; 
+  background: white; 
+} 
+ 
+.formulario { 
+  display: flex; 
+  gap: 8px; 
+  margin-bottom: 20px; 
+} 
+ 
+input, button { 
+  padding: 10px; 
+  font-size: 16px; 
+} 
+ 
+.lista-area { 
+  border: 1px solid #ccc; 
+  padding: 8px; 
+  margin-bottom: 32px; 
+} 
+ 
+.item { 
+  padding: 8px; 
+  border-bottom: 1px solid #ddd; 
+} 
+ 
+.imagem-area { 
+  margin-top: 1200px; 
+} 
+ 
+img { 
+  max-width: 100%; 
+  height: auto; 
+} 
