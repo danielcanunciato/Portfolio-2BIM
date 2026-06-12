@@ -1,0 +1,120 @@
+<!DOCTYPE html> 
+<html lang="pt-BR"> 
+    <head>
+
+        <meta charset="UTF-8"> 
+        <title>TaskFlow</title> 
+
+        <style> 
+
+            body { 
+                font-family: Arial, sans-serif; 
+                background-color: #eeeeee; 
+                color: #7e7e7e; 
+                padding: 20px; 
+            } 
+
+            .card { 
+                background-color: white; 
+                padding: 20px; 
+                max-width: 500px; 
+                margin: auto; 
+                border-radius: 20px;
+                filter: drop-shadow(0 0 4px white);
+            } 
+
+            input {
+                border: 2px solid black;
+                height: 24px;
+                border-radius: 4px;
+            }
+
+            button { 
+                background-color: #eeeeee; 
+                color: black; 
+                border-radius: 20px;
+                padding: 10px; 
+            } 
+
+            button:hover {
+                cursor: pointer;
+            }
+
+        </style> 
+    </head> 
+
+    <body> 
+
+        <main class="card"> 
+            <div>
+                <h1 id="titulo">TaskFlow</h1> 
+                <p id="descricao">Sistema para organizar tarefas.</p> 
+                <button id="change-lang" onclick="trocarLingua()">PT-BR</button>
+            </div>
+
+            <form>
+                <label><b id="titulo-tarefa">Nova Tarefa:</b></label>
+                <input id="tarefa" placeholder="Digite uma tarefa"> 
+                <button id='adicionar-tarefa' onclick="adicionarTarefa()">Adicionar Tarefa</button> 
+            </form>
+
+            <ul id="lista"></ul> 
+        </main> 
+
+        <script> 
+
+            let lang = "PT-BR"
+
+            function trocarLingua() {
+                const LINGUAS = {
+                    "PT-BR": {
+                        desc: "Sistema para organizar tarefas.",
+                        new_task: "Nova Tarefa:",
+                        inp_placeholder: "Digite uma tarefa",
+                        add: "Adicionar tarefa"
+                    },
+
+                    "EN" : {
+                        desc: "System to organize tasks.",
+                        new_task: "New Task:",
+                        inp_placeholder: "Type in your task:",
+                        add: "Add task"
+                    }
+                }
+
+                const __description = document.getElementById("descricao");
+                const __title_task = document.getElementById("titulo-tarefa");
+                const __task = document.getElementById("tarefa");
+                const __add_task = document.getElementById("adicionar-tarefa");
+
+                if (lang === "PT-BR") { lang = "EN" } else { lang = "PT-BR" }
+
+                __description.innerHTML = LINGUAS[lang].desc;
+                __title_task.innerHTML = LINGUAS[lang].new_task;
+                __task.placeholder = LINGUAS[lang].inp_placeholder;
+                __add_task.textContent = LINGUAS[lang].add;
+
+                const changeLang = document.getElementById("change-lang");
+                changeLang.textContent = lang;
+
+            }
+
+            function adicionarTarefa() { 
+                event.preventDefault();
+                const campo = document.getElementById('tarefa');
+                const lista = document.getElementById('lista');
+                const item = document.createElement('li');
+
+                item.textContent = campo.value; 
+                lista.appendChild(item); 
+                campo.value = ''; 
+            } 
+
+            // Adicionar tarefa pelo Enter
+            const botao = document.getElementById('adicionar-tarefa');
+            botao.addEventListener('keydown', adicionarTarefa);
+        </script> 
+
+    </body> 
+
+</html> 
